@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | ReserGo</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f4f4f4;
+      }
+      .login-container {
+        background: white;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        width: 350px;
+        text-align: center;
+      }
+      .login-container h2 {
+        margin-bottom: 20px;
+        color: #333;
+      }
+      .input-group {
+        margin-bottom: 15px;
+        text-align: left;
+      }
+      .input-group label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+      .input-group input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+      }
+      .remember-me {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+      }
+      .remember-me input {
+        margin-right: 10px;
+      }
+      .forgot-password {
+        display: block;
+        text-align: right;
+        margin-bottom: 15px;
+        font-size: 14px;
+        color: #007bff;
+        text-decoration: none;
+      }
+      .forgot-password:hover {
+        text-decoration: underline;
+      }
+      .login-btn {
+        width: 100%;
+        padding: 10px;
+        background-color: #007bff;
+        border: none;
+        color: white;
+        font-size: 18px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+      .login-btn:hover {
+        background-color: #0056b3;
+      }
+      .signup-link {
+        margin-top: 15px;
+        font-size: 14px;
+      }
+      .signup-link a {
+        color: #007bff;
+        text-decoration: none;
+      }
+      .signup-link a:hover {
+        text-decoration: underline;
+      }
+      @media (prefers-color-scheme: dark) {
+        body {
+          background-color: #333;
+          color: #fff;
+        }
+        .login-container {
+          color: #fff;
+          background-color: #222;
+          box-shadow: 0 0 10px #ccc;
+        }
+        .login-container h2 {
+          color: aqua;
+        }
+        label {
+          color: rgb(244, 115, 244);
+        }
+        .login-btn {
+          background-color: pink;
+          color: #222;
+        }
+        .login-btn:hover {
+          background-color: palevioletred;
+          box-shadow: 0 0 5px palevioletred;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="login-container">
+      <h2>Login to ReserGo</h2>
+      <form action="#" method="POST">
+        <div class="input-group">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username" required />
+        </div>
+        <div class="input-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required />
+        </div>
+        <div class="remember-me">
+          <input type="checkbox" id="remember" name="remember" />
+          <label for="remember">Remember Me</label>
+        </div>
+        <a href="#" class="forgot-password">Forgot Password?</a>
+        <button type="submit" class="login-btn">Login</button>
+      </form>
+      <div class="signup-link">
+        Don't have an account? <a href="#">Sign Up</a>
+      </div>
+    </div>
+  </body>
+</html>

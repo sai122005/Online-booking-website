@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ReserGo Airways</title>
+    <link rel="icon" type="image/png" href="image copy.png" />
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html{
+        scroll-behavior: smooth;
+    }
+    body{
+        background-color: #f8f9fa;
+        color: #333333;
+    }
+    .fir {
+        background-image: url(alllll.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+    .welcome-text {
+        font-size: 50px;
+        font-weight: bold;
+        color: white;
+        text-shadow: 2px 2px 10px black;
+        margin-bottom: 20px;
+      }
+      .book-now-btn {
+        background-color: #ad741e;
+        color: #fff;
+        padding: 15px 30px;
+        border: none;
+        border-radius: 10px;
+        font-size: 22px;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+      .book-now-btn:hover {
+        background-color: #ff9c06;
+        box-shadow: 0 0 10px #ff9c06;
+      }
+    .header {
+      position: fixed;
+      width: 100%;
+      padding: 15px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: rgba(0, 0, 0, 0.9);
+      z-index: 1000;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    }
+    .header h2 {
+      text-transform: capitalize;
+      font-size: 25px;
+      color: #389ce4;
+      font-weight: bold;
+    }
+    .header .sub-title {
+      font-size: 16px;
+      color: rgb(200, 200, 200);
+      margin-left: 10px;
+    }
+    .navbar a {
+      margin: 0 15px;
+      color: #fff;
+      font-size: 18px;
+      text-decoration: none;
+      transition: 1s ease-in-out;
+    }
+    .navbar a:hover {
+      color:  #ff4081;
+      text-decoration: underline;
+    }
+    .about{
+        margin-top: 100px;
+        text-align: center;
+        padding: 50px;
+    }
+    .about{
+        font-size: 20px;
+    }
+    .about h1{
+        color: #ff4081;
+        font-size: 30px;
+    }
+    .about h3{
+        color: purple;
+        font-size: 25px;
+    }
+    .about li{
+        list-style-type: none;
+        padding: 15px;
+    }
+    .help{
+        margin-bottom: 50px;
+        margin-left: 50px;
+    }
+    .help span{
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .help p{
+        padding: 10px;
+        font-size: 20px;
+    }
+    @media (prefers-color-scheme: dark) {
+  body {
+    background-color: #020202;
+    color: #fff;
+  }
+}    
+  </style>
+  <body>
+    <header class="header">
+      <h2>
+        Welcome to ReserGo Airways!<span class="sub-title"
+          >|Fast, Easy, and Hassle-Free Booking!</span
+        >
+      </h2>
+      <nav class="navbar">
+        <a href="signup.html">Sign Up</a>
+        <a href="login.html">Login</a>
+        <a href="#about">About</a>
+        <a href="#help">Help</a>
+      </nav>
+    </header>
+    <section class="fir">
+      <div class="welcome-text">Welcome to <span style="color: #610454;">ReserGo..!</span></div>
+      <button class="book-now-btn" onclick="document.location='book.html'">Book Now</button><br><br><br><br><br><br>
+      <h3 style="font-size: 40px;color: black;">"Fly with Confidence, Land with Trust – <span style="color: rgb(251, 4, 4);">ReserGo Airways</span>."</h3>
+    </section>
+    <section class="about" id="about">
+        <h1>ReserGo – Online Booking System</h1><br>
+           <p> ReserGo is a seamless and user-friendly online booking system designed for hassle-free reservations. Whether it’s travel, events, appointments, or accommodations, ReserGo makes booking fast, easy, and efficient.</p><br><h3>Steps to book:</h3>
+          <li><span style="font-weight: bold;">User Sign-Up/Login</span> – Create an account or log in.</li>
+          <li><span style="font-weight: bold;">Select Booking Type</span> – Choose from travel, events, or services.</li>
+          <li><span style="font-weight: bold;">Choose Date & Time</span> – Pick your preferred slot.</li>
+          <li><span style="font-weight: bold;">Confirm & Pay (if applicable)</span> – Secure your reservation.</li>
+          <li><span style="font-weight: bold;">Get Confirmation</span> – Receive email/SMS notifications.</li>
+          <li><span style="font-weight: bold;">Modify or Cancel </span>– Edit or cancel bookings if needed.</li>
+    </section>
+    <section class="help" id="help">
+           <h2 style="color: brown;font-size: 30px;">ReserGo – Help & Support</h2>
+           <p><span>📌 Sign Up/Login –</span>Create an account using your email and password. Reset your password if needed.</p>
+           <p><span>📌 Making a Booking –</span> Select a category, pick a date & time, and confirm your booking.</p>
+           <p><span>📌 Payment & Refunds  –</span>Pay using cards, net banking, or digital wallets. Refunds take 5-7 business days if applicable.</p>
+           <p><span>📌 Didn't Get Confirmation?-</span>Check spam/junk mail or contact support.</p>
+           <p>📌 Contact Support <br><br>
+            📞 Call: +123-456-7890 <br>
+              <p>📧 Email:
+              <a href="mailto:support@resergo.com">support@resergo.com</a><br></p>
+           </p>
+    </section>
+  </body>
+</html>
